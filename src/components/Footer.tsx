@@ -1,4 +1,5 @@
 import { BRANCH_LOCATIONS } from '../data/fleetData';
+import { WhatsAppIcon } from './WhatsAppButton';
 
 interface FooterProps {
   onOpenBookings: () => void;
@@ -85,6 +86,15 @@ export function Footer({ onOpenBookings, onStartBooking }: FooterProps) {
               <p>24/7 Dispatch Desk</p>
               <p className="text-white font-medium mt-0.5 tabular-nums">+880 1700 876666</p>
               <p className="mt-0.5">concierge@vromonrentals.com</p>
+              <a
+                href="https://wa.me/8801700876666?text=Hi%20Vromon%20Car%20Rental%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20vehicle."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2.5 inline-flex items-center gap-1.5 text-[#25D366] hover:text-white font-semibold transition-colors whitespace-nowrap"
+              >
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>WhatsApp Support</span>
+              </a>
             </div>
           </div>
         </div>

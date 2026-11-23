@@ -9,6 +9,7 @@ import { Navbar } from './components/Navbar';
 import { SmartExperienceSection } from './components/SmartExperienceSection';
 import { TestimonialsAndFaqSection } from './components/TestimonialsAndFaqSection';
 import { ValuePropositionSection } from './components/ValuePropositionSection';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import { FLEET_VEHICLES, SEED_RESERVATION } from './data/fleetData';
 import { BookingSearchState, Reservation, Vehicle, VehicleCategory } from './types/rental';
 import { getDefaultSearchDates } from './utils/bookingMath';
@@ -144,6 +145,8 @@ export default function App() {
         onCancelReservation={handleCancelReservation}
         onBrowseFleet={scrollToFleet}
       />
+
+      <WhatsAppButton />
     </div>
   );
 }
